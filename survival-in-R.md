@@ -5,7 +5,7 @@ Easily obtain common results and outputs. This should get you 80% of the way.
 
 Contents
 
--   KM Curves
+-   KM Curves and Summaries
 -   Cox model
 -   Forest Plots
 -   Tips, notes, documentation links
@@ -69,14 +69,79 @@ ggsurvplot(mod, data=df, risk.table=TRUE, pval=TRUE,
 
 ![](survival-in-R_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
 
+KM Summaries
+============
+
+``` r
+mod <- survfit(Surv(time, status) ~ sex, data = df)
+
+mod 
+```
+
+    ## Call: survfit(formula = Surv(time, status) ~ sex, data = df)
+    ## 
+    ##         n events median 0.95LCL 0.95UCL
+    ## sex=1 138    112    270     212     310
+    ## sex=2  90     53    426     348     550
+
+Let's tidy up the above into a nice data frame.
+
+(the `broom` package is highly recommended to tidy model results)
+
+``` r
+mod %>% summary %>% .$table %>% tidy
+```
+
+    ##   .rownames records n.max n.start events  X.rmean X.se.rmean. median
+    ## 1     sex=1     138   138     138    112 325.0663    22.59845    270
+    ## 2     sex=2      90    90      90     53 458.2757    33.78530    426
+    ##   X0.95LCL X0.95UCL
+    ## 1      212      310
+    ## 2      348      550
+
+The following gives more info which may be useful for plotting (suppressed)
+
+``` r
+## mod %>% tidy
+## same info, from base R:
+## summary(mod) 
+```
+
+Base R summary table (not a data frame). Similar to printing `mod` above.
+
+``` r
+summary(mod)$table
+```
+
+    ##       records n.max n.start events   *rmean *se(rmean) median 0.95LCL
+    ## sex=1     138   138     138    112 325.0663   22.59845    270     212
+    ## sex=2      90    90      90     53 458.2757   33.78530    426     348
+    ##       0.95UCL
+    ## sex=1     310
+    ## sex=2     550
+
 Cox model
 =========
 
-Basic cox model and results
+Basic Cox model and results
 
 ``` r
 mod <- coxph(Surv(time, status) ~ sex + age, data = df)
 
+mod
+```
+
+    ## Call:
+    ## coxph(formula = Surv(time, status) ~ sex + age, data = df)
+    ## 
+    ##          coef exp(coef) se(coef)     z      p
+    ## sex2 -0.51322   0.59857  0.16746 -3.06 0.0022
+    ## age   0.01705   1.01719  0.00922  1.85 0.0646
+    ## 
+    ## Likelihood ratio test=14.1  on 2 df, p=0.000857
+    ## n= 228, number of events= 165
+
+``` r
 summary(mod)
 ```
 
@@ -103,9 +168,7 @@ summary(mod)
 
 ### Details
 
-Let's put the above into a nice data frame.
-
-(the `broom` package is highly recommended to tidy model results)
+Tidy it up:
 
 ``` r
 mod %>% tidy
@@ -178,7 +241,7 @@ mod <- coxph(Surv(time, status) ~ sex + age, data = df)
 forest_model(mod)
 ```
 
-![](survival-in-R_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-11-1.png)
+![](survival-in-R_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-15-1.png)
 
 Tips
 ====
