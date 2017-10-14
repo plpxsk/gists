@@ -1,4 +1,4 @@
-TMUX basic commands
+TMUX Reference
 ===============================================================================
 > Scroll down for more
 
