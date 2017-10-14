@@ -1,4 +1,4 @@
-An example analysis, which follows [my project template](https://github.com/pavopax/new-project-template).
+An example analysis, which follows [New Project Template](https://github.com/pavopax/new-project-template).
 
 From a real analysis. Some data redacted.
 
