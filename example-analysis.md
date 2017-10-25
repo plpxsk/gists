@@ -4,7 +4,7 @@ From a real analysis. Some data redacted.
 
 # Makefile
 
-makefile contains the recipe to run the entire analysis.
+Makefile contains the recipe to run the entire analysis.
 
 Eg, to rerun the whole thing, just type `make all` and press ENTER.
 
