@@ -60,7 +60,8 @@ Can be self-documenting.
 
 # Tips
 
-Add a target `clean` to remove data and start from scratch (reproducibility!)
+Add a target `clean` to remove data and start from scratch (reproducibility,
+FTW!)
 
 	clean:
 		rm -rf data
