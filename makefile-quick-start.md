@@ -7,7 +7,7 @@ It's like a recipe for your code repo.
 `Makefile` is a single file that can run all analysis code, or do other
 tasks. It is self-documenting, and helps in "reproducibility."
 
-You run this from command line.
+You run it from command line, as follows.
 
 # Hello, world!
 
