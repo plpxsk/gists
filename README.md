@@ -9,6 +9,12 @@ Easily find my gists
 
     Easily obtain KM Curves and summaries, Cox model results, and Forest plots
 
+  * **R Helper Functions**
+  
+    [helpers.R](helpers.R)
+	
+	Helper functions I reuse in my projects
+
   * **Makefile Quick Start**
   
     [makefile-quick-start.md](makefile-quick-start.md)
