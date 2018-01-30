@@ -12,12 +12,21 @@ expect_unique_rows <- function(.data, id="USUBJID") {
 }
 
 get_file_from_path  <- function(path, file, suppress_coltype_msg=TRUE) {
-    if (suppress_coltype_msg)
+    if (suppress_coltype_msg) {
         paste0(path, file) %>% read_csv(col_types=cols())
-    }
-    else {
+    } else {
         paste0(path, file) %>% read_csv()
     }
 }
 
-char_to_factor <- . %>% mutate_if(is.character, as.factor)
+char_to_factor <- function(.data) {
+    .data %>% mutate_if(is.character, as.factor)
+}
+
+make_valid_colnames <- function(colnames) {
+    colnames %>%
+        make.names(unique=TRUE) %>%
+        gsub("\\.", "_", .) %>%
+        gsub("__", "_", .)  %>%   # sometimes get duplicate separators
+        gsub("X_", "", .)         # some get X_ prefix
+}
