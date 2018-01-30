@@ -15,6 +15,12 @@ Easily find my gists
 	
 	Helper functions I reuse in my projects
 
+  * **R Reusable code snippets**
+  
+    [r-snippets.md](r-snippets.md)
+	
+	R snippets I frequently need but forget
+
   * **Makefile Quick Start**
   
     [makefile-quick-start.md](makefile-quick-start.md)
@@ -45,3 +51,7 @@ here:
 
 ![img](img/hn.jpg)
 
+
+# Notes
+
+Once they grow, some of these files will likely be moved to their own repos.
