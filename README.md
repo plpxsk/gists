@@ -8,6 +8,12 @@ Easily find my gists
     [survival-in-R.md](survival-in-R.md)
 
     Easily obtain KM Curves and summaries, Cox model results, and Forest plots
+    
+  * **R Style/workflow Suggestions**
+  
+    [r-style-tips.md](r-style-tips.md)
+    
+    Style/workflow tips for programming in R that amplify existing guides
 
   * **R Helper Functions**
   
@@ -15,7 +21,7 @@ Easily find my gists
 	
 	Helper functions I reuse in my projects
 
-  * **R Reusable code snippets**
+  * **R Reusable Code Snippets**
   
     [r-snippets.md](r-snippets.md)
 	
