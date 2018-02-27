@@ -1,9 +1,10 @@
 # Style/workflow tips for programming in R
 
+> It is always easier to write code than it is to read it.
+
 Just some thoughts from my experience which aim to amplify existing guides.
 
 This is more applicable for projects that are larger than a few hundred lines of a single Rmd file.
-
 
 # Workflow
 
