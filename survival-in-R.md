@@ -166,6 +166,18 @@ summary(mod)
     ## Wald test            = 13.47  on 2 df,   p=0.001187
     ## Score (logrank) test = 13.72  on 2 df,   p=0.001048
 
+Add interactions with `*` (and keep main effects):
+
+```r
+mod <- coxph(Surv(time, status) ~ sex*age, data = df)
+```
+
+Keep only interactions with `:` (not common)
+
+```r
+mod <- coxph(Surv(time, status) ~ sex:age, data = df)
+```
+
 ### Details
 
 Tidy it up:
@@ -224,6 +236,11 @@ survfit(mod)
     ## 
     ##       n  events  median 0.95LCL 0.95UCL 
     ##     228     165     320     285     363
+    
+    
+Add interaction effect
+
+
 
 Easy Forest plot
 ================
