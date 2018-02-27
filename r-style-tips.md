@@ -37,7 +37,7 @@ When programming, consider [the rule of three](http://pavopax.github.io/2017/08/
 
 ## For Rmd documents
 
-Are not overly long (a few hundred lines max)
+Rmd files are not overly long (a few hundred lines max)
 
 Place `library()` calls on top, not throughout
 
@@ -45,7 +45,7 @@ Add contact/email at top in case others find the analysis in the wild and/or are
 
 limit code lines to 79 or 80 characters max
 
-To reuse data processing and potentially speed up knit(), put data cleaning/processing into a separate file
+To reuse data processing and potentially speed up knitting to html or PDF, put data cleaning/processing into a separate file
 - for example, create and run separate R scripts (see below) that clean/process data and create "derived" datasets, and then just read in the derived data at top of your Rmd file
 
 
@@ -54,6 +54,7 @@ To reuse data processing and potentially speed up knit(), put data cleaning/proc
 should run with zero (minimal) messages/warnings
 - use `suppressPackageStartupMessages(library(tidyverse))` etc
 - in joining, use explicit `by` variables
+- in reading csv's with read_csv, specify column types, eg with `read_csv("file.csv", col_types = cols())` (I want your thoughts on this: See https://github.com/pavopax/gists/issues/1)
 - rationale: when you run these from command line, with fewer messages, it will be easier to find real/important warnings/messages/errors. if everything is good, you will only see the "DONE" message to signify you're good to go (see next)
 
 limit all lines to 79 or 80 characters max (for exceptions like long file paths, etc, tag the end with something line `# noqa`)
