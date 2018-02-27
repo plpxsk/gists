@@ -20,10 +20,6 @@ For more complicated/larger analyses, try to work with R scripts instead of long
 
 # Style - good practices
 
-*I hesitate to call these "best practices" until I am more certain that a larger user base finds most of them useful.*
-
-## General
-
 Define functions near top of your program/script. Or in a separate `helpers.R` or similar file and then `source(“helpers.R”)` near top
 
 Define constants near the top of the program (possibly using VARIABLES_IN_CAPS)
@@ -39,7 +35,7 @@ write out tidy CSV files - do not write row names to output CSVs. Use:
 When programming, consider [the rule of three](http://pavopax.github.io/2017/08/use-the-rule-of-three/)
 
 
-## Rmd documents
+## For Rmd documents
 
 Are not overly long (a few hundred lines max)
 
@@ -53,8 +49,7 @@ To reuse data processing and potentially speed up knit(), put data cleaning/proc
 - for example, create and run separate R scripts (see below) that clean/process data and create "derived" datasets, and then just read in the derived data at top of your Rmd file
 
 
-## R scripts
-
+## For R scripts
 
 should run with zero (minimal) messages/warnings
 - use `suppressPackageStartupMessages(library(tidyverse))` etc
