@@ -31,7 +31,7 @@ Easily find my gists
   
     [makefile-quick-start.md](makefile-quick-start.md)
 	
-    Your code files are probably all over the place. Write a recipe for your
+    Your code files are probably all over the place. Write a simple recipe for your
     project/analysis repo.
 
   * **Tmux Reference**
