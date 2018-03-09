@@ -31,8 +31,13 @@ write out tidy CSV files - do not write row names to output CSVs. Use:
 - readr::write_csv (available in tidyverse), OR:
 - write.csv(..., row.names=FALSE)
 
+Do not add dates to output file names. Latest dataset should always have the same, fixed, name.
+Overwrite old files (and possibly move older versions to /old folder if you really need them).
+- filenames with dates mean you have to change your code if the filename changes
 
 When programming, consider [the rule of three](http://pavopax.github.io/2017/08/use-the-rule-of-three/)
+
+
 
 
 ## For Rmd documents
