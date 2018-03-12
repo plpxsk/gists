@@ -51,3 +51,20 @@ Returns:
 ## 1 data/file1.csv <tibble [263 x 10]>   263
 ## 2 data/file2.csv <tibble [208 x 22]>   208
 ```
+
+# Speed test/timer
+
+Copy/paste whole thing into R console and RUN. Takes ~20 s total
+
+Load `library(dplyr)` separately from speed test,
+
+```r
+n <- 1e8
+s1 <- Sys.time()
+x <- rnorm(n)
+y <- rnorm(n)
+(time <- Sys.time()-s1)
+system.time(m1 <- matrix(c(x,y),ncol=2))
+system.time(m2 <- data.frame(x,y))
+system.time(m3 <- data_frame(x,y))
+```
