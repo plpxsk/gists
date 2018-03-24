@@ -33,6 +33,7 @@ here:
 
 # Notes
 
-R helpers, snippets, style recommendations are now in a separate repo.
+R helpers, snippets, style recommendations are now at
+[pavopax/r](https://github.com/pavopax/r).
 
 Once they grow, some of these files will likely be moved to their own repos.
