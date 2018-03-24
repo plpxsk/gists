@@ -4,14 +4,13 @@
 
 Great design comes from great designers.
 
-@hadleywickham on clever programming solutions:
+@hadleywickham on clever programming solutions (via @robinson_es)
 
 	Now: "My god I am a total coding genius” 
 	3 months later: "I have no idea what this means"
-	Via @robinson_es
 
 When programming, [consider the rule of
-three](http://pavopax.github.io/2017/08/use-the-rule-of-three/)
+three](http://pavopax.github.io/2017/08/use-the-rule-of-three/).
 
 It is always easier to write code than to read it.
 
