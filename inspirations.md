@@ -22,6 +22,16 @@ The gap between the best software engineering practice and the average practice
 is very wide - perhaps wider than in any other engineering discipline (Fred
 Brooks).
 
+Apple is a perfect example of a company that prioritises execution over ideas.
+- Jack Strachan
+
+There is no substitute for personally watching and listening to real people
+- Larry Page, on getting feedback to build great things
+
+Tim Cook, first thing every day: reading customer emails, to stay close to the
+customer
+
+
 # More
 
 [More from Fred Brooks on software and
