@@ -31,6 +31,8 @@ There is no substitute for personally watching and listening to real people
 Tim Cook, first thing every day: reading customer emails, to stay close to the
 customer
 
+Simplicity is prerequisite for reliability - Edsger Dijkstra
+
 
 # More
 
