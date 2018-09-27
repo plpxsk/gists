@@ -29,7 +29,7 @@ df <- lung %>%
     mutate(sex=as.character(sex))       # or factor(sex)
 ```
 
-The `lung` dataframe has 228 rows and 10 columns. Here is how the first 10 rows of the critical `time`, `status`, `sex` and `age` columns look.
+The `lung` dataframe has 228 rows and 10 columns. Here are a few rows and the important variables `time`, `status`, `sex` and `age`:
 
 | time| status| sex| age|
 |----:|------:|---:|---:|
@@ -39,12 +39,9 @@ The `lung` dataframe has 228 rows and 10 columns. Here is how the first 10 rows 
 |  210|      2|   1|  57|
 |  883|      2|   1|  60|
 | 1022|      1|   1|  74|
-|  310|      2|   2|  68|
-|  361|      2|   2|  71|
-|  218|      2|   1|  53|
-|  166|      2|   1|  61|
 
-The two critical columns are `time` - a non-negative integer indicating the follow up time, and status, where 1 = censored, and 2 = dead. Alternative codings are possible (see `?Surv()`)
+
+A survival outcome consists of 2 pieces: `time`, a non-negative integer indicating the follow up time, and censoring `status`. Here, 1 = censored, and 2 = dead. Alternative codings are possible (see `?Surv()`)
 
 KM Curves
 =========
