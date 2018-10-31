@@ -15,6 +15,10 @@ Easily find my gists
   * [Tmux Reference](tmux-reference.md)
 
     Handy reference (or quick-start) for common commands in `tmux`
+    
+  * [Using Github](using-github.md)
+  
+    (Working) Tips on using git/hub in development
 
   * [Inspirations](inspirations.md)
   
