@@ -72,6 +72,19 @@ ggsurvplot(mod, data=df) +
 
 ![](survival-in-R_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
+
+To add more `ggplot2()` layers, extract the plot object:
+
+```r
+p <- ggsurvplot(mod, data=df) +
+    ggtitle("Whoa, I can add ggplot layers!") +
+    labs(x="Time (days)")
+
+p$plot +
+    scale_fill_brewer() +
+	coord_cartesian(xlim=c(0, 360))
+```
+
 Here are more options (documentation at bottom)
 
 ``` r
