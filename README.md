@@ -2,11 +2,14 @@
 
 Easily find my gists
 
+  * [Nested Cross-Validation](nested-cross-validation.md)
+
+    What is nested cross-validation (for) and why you should use it
 
   * [Basic Survival Methods in R](survival-in-R.md)
   
     Easily obtain KM Curves and summaries, Cox model results, and Forest plots
-    
+
   * [Makefile Quick Start](makefile-quick-start.md)
 	
     Your code files are probably all over the place. Write a simple recipe for your
