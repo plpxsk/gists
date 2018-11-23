@@ -2,7 +2,12 @@
 
 A working document
 
-# Commit messages
+# Better commit messages
+
+See [The seven rules of a great Git commit
+message](https://chris.beams.io/posts/git-commit/#seven-rules)
+
+# Commit message acronyms
 
 For better log viewing, consider using scipy commit message acronomys (or similar):
 
