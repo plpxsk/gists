@@ -74,7 +74,7 @@ or declare it as `.PHONY` in `Makefile` like:
 	
 	.PHONY: data
 	data:
-	    Rscript get_bce_data.R
+	    Rscript get_datasets.R
 
 	
 More on [.PHONY](https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html)
