@@ -13,7 +13,7 @@ You run it from command line, as follows.
 
 Here's a simple example.
 
-Make a file `Makefile` and put this in it:
+Make a file `Makefile` (no extension!) and put this in it:
 
 ```bash
 all: data process output
