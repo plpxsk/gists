@@ -66,7 +66,10 @@ FTW!)
 	clean:
 		rm -rf data
 
-If you already have a `/data` folder, then `make data` may give you
+(Consider adding `mkdir -p data` in your `make data` target to create
+this folder automatically)
+
+If you already have a `/data` folder, then running `make data` may give you
 error. There are reasons for this. To alleviate this, run it as `make -B data`
 or declare it as `.PHONY` in `Makefile` like:
 
