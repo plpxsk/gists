@@ -116,7 +116,7 @@ Let's tidy up the above into a nice data frame.
 (the `broom` package is highly recommended to tidy model results)
 
 ``` r
-mod %>% summary %>% .$table %>% tidy
+summary(mod)$table %>% tidy()
 ```
 
     ##   .rownames records n.max n.start events  X.rmean X.se.rmean. median
@@ -126,15 +126,8 @@ mod %>% summary %>% .$table %>% tidy
     ## 1      212      310
     ## 2      348      550
 
-The following gives more info which may be useful for plotting (suppressed)
 
-``` r
-## mod %>% tidy
-## same info, from base R:
-## summary(mod) 
-```
-
-Base R summary table (not a data frame). Similar to printing `mod` above.
+Base R summary table (not a data frame):
 
 ``` r
 summary(mod)$table
@@ -146,6 +139,15 @@ summary(mod)$table
     ##       0.95UCL
     ## sex=1     310
     ## sex=2     550
+
+
+The following gives more info which may be useful for plotting (suppressed)
+
+``` r
+## mod %>% tidy()
+## same info, from base R:
+## summary(mod) 
+```
 
 Cox model
 =========
@@ -210,7 +212,7 @@ mod <- coxph(Surv(time, status) ~ sex:age, data = df)
 Tidy it up:
 
 ``` r
-mod %>% tidy
+mod %>% tidy()
 ```
 
     ##   term    estimate   std.error statistic     p.value     conf.low
@@ -224,7 +226,7 @@ Exponentiate to get HR and 2.5, 97.5% CI's, plus select what you need
 
 ``` r
 mod %>%
-    tidy %>%
+    tidy() %>%
     mutate(
         estimate=exp(estimate),
         conf.low=exp(conf.low),
@@ -296,7 +298,7 @@ Recommended documentation:
 -   Forest Plots with `forestmodel`: [Github](https://github.com/NikNakk/forestmodel) | [StackOverflow](https://stackoverflow.com/a/31373382/3217870)
 -   [`broom` is awesome](http://varianceexplained.org/r/broom-intro/)
 
-Cool mutates with `mutate_at`
+Useful mutates with `mutate_at`
 
 ``` r
 mod %>%

@@ -13,7 +13,7 @@ You run it from command line, as follows.
 
 Here's a simple example.
 
-Make a file `Makefile` and put this in it:
+Make a file `Makefile` (no extension!) and put this in it:
 
 ```bash
 all: data process output
@@ -66,7 +66,10 @@ FTW!)
 	clean:
 		rm -rf data
 
-If you already have a `/data` folder, then `make data` may give you
+(Consider adding `mkdir -p data` in your `make data` target to create
+this folder automatically)
+
+If you already have a `/data` folder, then running `make data` may give you
 error. There are reasons for this. To alleviate this, run it as `make -B data`
 or declare it as `.PHONY` in `Makefile` like:
 
@@ -74,7 +77,7 @@ or declare it as `.PHONY` in `Makefile` like:
 	
 	.PHONY: data
 	data:
-	    Rscript get_bce_data.R
+	    Rscript get_datasets.R
 
 	
 More on [.PHONY](https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html)
