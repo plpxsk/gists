@@ -2,6 +2,10 @@
 
 Easily find my gists
 
+  * [XGBoost with Nested Cross-Validation](xgboost-with-nested-cv)
+  
+    Train an XGBoost model with nested cross-validation in python scikit-learn
+
   * [Nested Cross-Validation](nested-cross-validation.md)
 
     What is nested cross-validation (for) and why you should use it
@@ -12,8 +16,8 @@ Easily find my gists
 
   * [Makefile Quick Start](makefile-quick-start.md)
 	
-    Your code files are probably all over the place. Write a simple recipe for your
-    project/analysis repo.
+    Your code files are probably all over the place. Write a simple recipe for
+    your project/analysis repo.
 
   * [Tmux Reference](tmux-reference.md)
 
