@@ -23,3 +23,8 @@ Effort split:
   * 5% writing model code
   * 95% manipulating outputs across different packages/languages, to get them
     into consistent format
+
+# References
+
+`glmnet`: https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html
+
