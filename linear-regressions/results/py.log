@@ -1,0 +1,29 @@
+RUNNING MODEL :  statsmodels
+Warning: Maximum number of iterations has been exceeded.
+         Current function value: 0.246921
+         Iterations: 35
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:                      y   No. Observations:                  200
+Model:                          Logit   Df Residuals:                      192
+Method:                           MLE   Df Model:                            7
+Date:                Wed, 26 Feb 2020   Pseudo R-squ.:                  0.6437
+Time:                        14:39:50   Log-Likelihood:                -49.384
+converged:                      False   LL-Null:                       -138.62
+Covariance Type:            nonrobust   LLR p-value:                 4.098e-35
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+x0             0.1903      0.241      0.789      0.430      -0.282       0.663
+x1            -0.3661      0.245     -1.497      0.134      -0.845       0.113
+x2             0.2310      0.276      0.837      0.403      -0.310       0.772
+x3            -0.1654      0.279     -0.594      0.553      -0.711       0.381
+x4            -0.4010   4.03e+07  -9.96e-09      1.000   -7.89e+07    7.89e+07
+x5            -0.2355        nan        nan        nan         nan         nan
+x6             3.3603   4.42e+06   7.61e-07      1.000   -8.66e+06    8.66e+06
+x7            -0.4851      0.284     -1.711      0.087      -1.041       0.071
+x8             0.9893        nan        nan        nan         nan         nan
+x9            -0.0913      0.270     -0.337      0.736      -0.621       0.439
+==============================================================================
+RUNNING MODEL :  sklearn_lr_lbfgs
+RUNNING MODEL :  sklearn_lrcv
