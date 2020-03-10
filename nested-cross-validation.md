@@ -130,6 +130,11 @@ Cawley, G.C.; Talbot, N.L.C. On over-fitting in model selection and subsequent
 selection bias in performance evaluation. J. Mach. Learn. Res 2010,11,
 2079-2107.
 
+Sandrine Dudoit, Mark J. van der Laan. Asymptotics of cross-validated risk
+estimation in estimator selection and performance assessment, Statistical
+Methodology, Volume 2, Issue 2, 2005, Pages 131-154, ISSN 1572-3127,
+https://doi.org/10.1016/j.stamet.2005.02.003.
+
 Cross-validation
 (Statistics). [Wikipedia](https://en.wikipedia.org/wiki/Cross-validation_(statistics)).
 
