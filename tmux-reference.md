@@ -96,6 +96,7 @@ Panes
 	l move to the right pane
 	k move to the pane above
 	k move to the pane above
+	m mark pane (https://superuser.com/a/1057010)
 	q show pane numbers
 	o toggle between panes
 	} swap with next pane
