@@ -88,6 +88,10 @@ Windows
 	0 to 9 select windows 0 through 9
 
 Panes
+
+	o switch to next pane; toggle between (o)ther panes
+	; switch to previous pane 
+	q show pane numbers
 	
 	% create a horizontal pane
 	" create a vertical pane
@@ -95,10 +99,8 @@ Panes
 	j move to the pane below
 	l move to the right pane
 	k move to the pane above
-	k move to the pane above
 	m mark pane (shows up in status bar as "*M", see https://superuser.com/a/1057010)
-	q show pane numbers
-	o toggle between panes
+
 	} swap with next pane
 	{ swap with previous pane
 	! break the pane out of the window
