@@ -61,7 +61,7 @@ Tmux shortcuts 2 of 2 (more)
 Basics
 
 	c  create new window
-	w  list current windows
+	w  interactively list current windows (navigate with j,k, RET)
 
 	?  get help
 
