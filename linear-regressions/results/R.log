@@ -1,0 +1,34 @@
+[1] "RUNNING MODEL: glm"
+
+Call:
+glm(formula = y ~ ., family = "binomial", data = df)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.59939  -0.15900  -0.00202   0.34607   3.15778  
+
+Coefficients: (2 not defined because of singularities)
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -0.83312    0.36042  -2.312   0.0208 *  
+x0            0.31212    0.25779   1.211   0.2260    
+x1           -0.27702    0.26077  -1.062   0.2881    
+x2            0.24553    0.28977   0.847   0.3968    
+x3           -0.17060    0.27882  -0.612   0.5406    
+x4          -43.43185    6.93319  -6.264 3.74e-10 ***
+x5           11.40479    1.89454   6.020 1.75e-09 ***
+x6                 NA         NA      NA       NA    
+x7           -0.44006    0.29178  -1.508   0.1315    
+x8                 NA         NA      NA       NA    
+x9           -0.06926    0.28229  -0.245   0.8062    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 277.239  on 199  degrees of freedom
+Residual deviance:  92.123  on 191  degrees of freedom
+AIC: 110.12
+
+Number of Fisher Scoring iterations: 7
+
+[1] "RUNNING MODEL: glmnet"
