@@ -14,6 +14,10 @@ Easily find my gists
   
     Easily obtain KM Curves and summaries, Cox model results, and Forest plots
 
+  * [ROC AUC experiments with imbalanced outcome](roc-auc-imbalanced-experiments.R)
+
+    Some quick experiments to measure ROC AUC for imbalanced y
+
   * [Makefile Quick Start](makefile-quick-start.md)
 	
     Your code files are probably all over the place. Write a simple recipe for
